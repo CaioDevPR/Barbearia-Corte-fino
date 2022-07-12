@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        body{
+            background-color: #000;
+        }
+        #box{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+#box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+#box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section.module.content{
+    padding: 80px 0;
+    background-color: #000;
+}
+    </style>
+</head>
+<body>
+    <section class="module content">
+        
+        <div id="box">
+            <img src="/imagens/logo.png" alt="">
+            <span style="--i:1;"><img src="/imagens/wilson.jpeg" alt=""> </span>
+            <span style="--i:2;"><img src="/imagens/fabregas.jpeg" alt=""> </span>
+            <span style="--i:4;"><img src="/imagens/riscof.jpeg" alt=""> </span>
+            <span style="--i:5;"><img src="/imagens/natan c.jpeg" alt=""> </span>
+            <span style="--i:6;"><img src="/imagens/natan f.jpeg" alt=""> </span>
+            <span style="--i:7;"><img src="/imagens/menino.jpeg" alt=""> </span>
+            <span style="--i:8;"><img src="/imagens/wiliam.jpeg" alt=""> </span>
+            <span style="--i:9;"><img src="/imagens/wilson.jpeg" alt=""> </span>
+            <span style="--i:10;"><img src="/imagens/rafael.jpeg" alt=""> </span>
+            <span style="--i:11;"><img src="/imagens/img11.jpeg" alt=""> </span>
+            
+        </div>
+    </section>
+</body>
+</html>
