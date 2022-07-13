@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+.fa-brands{ 
+    padding: 10px;
+    position: relative;
+    bottom: 10px;
+   
+}
+
 
 nav{
     display: flex;
@@ -163,10 +170,16 @@ section.module.parallax::after{
 }
 
 section.module.parallax-1{
-    background-image: url(/imagens/barba.jpg);
+    background-image: url(/imagens/cortefino.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 section.module.parallax-2{
-    background-image: url(/imagens/img9.jpeg);
+    background-image: url(/imagens/natan\ c.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 /* precos */
@@ -675,12 +688,13 @@ button:nth-child(3) > a:nth-child(1) {
     body  {
         max-width: 599px;
     }
+
     .module.content h2{
-        font-size: 20px;
+        font-size: 33px;
     }
     .ftosoglr{
-        width: 270px;
-        height: 210px;
+        width: 370px;
+        height: 270px;
     }
     .galeria{
         display: grid;
@@ -716,6 +730,7 @@ button:nth-child(3) > a:nth-child(1) {
         position: relative;
         left: -20px;
     }
+
 }
 @media (min-width:600px) and (max-width: 768px) {
   .servicos img{
@@ -780,10 +795,7 @@ button:nth-child(3) > a:nth-child(1) {
   .module.content h2{
     font-size: 40px;
   }
-  section.module.parallax-1{
-    background-image: url(/imagens/barba.jpg);
-   width: 100%;
-}
+  
    }
 
 @media (min-width:600px) and (max-width: 800px){
@@ -796,5 +808,39 @@ button:nth-child(3) > a:nth-child(1) {
     .insta h1{
         position: relative;
         left: 1px;
+    }
+}
+@media screen and (min-width: 1300px)  {
+    .precos h3{
+        font-size: 80px;
+    }
+    .precos p{
+        font-size: 1.3rem;
+    }
+  .ftosoglr{
+    max-width: 1000px;
+    width: 430px;
+    height: 400px;
+  }
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: -2px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px ;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+     
+}
+}
+@media screen and(min-width: 400px) and (max-width:730px){
+    section.module.parallax-2{
+        background-image: url(/imagens/natan\ c2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 }
