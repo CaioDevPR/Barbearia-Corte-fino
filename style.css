@@ -17,7 +17,7 @@ nav{
     display: flex;
     height: 80px;
     width: 100%;
-    background-color: black;
+    background-color: #000;
     align-items: center;
     justify-content: space-between;
     padding: 0 50px 0 100px;
@@ -844,3 +844,45 @@ button:nth-child(3) > a:nth-child(1) {
         background-position: center;
     }
 }
+
+@media screen and (min-width: 1023px) and (max-width: 1366px){
+     .precos h3{
+        font-size: 60px ;
+    }
+    .logo{
+        width: 24%;
+    }
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .ftosoglr{
+        width: 290px;
+        height: 259px;
+    }
+}
+
+/* animacoes */
+[data-anime]{
+    opacity: 0;
+    transition: 0.5s;
+}
+
+[data-anime="left"]{
+    transform: translate3d(-50px, 0 , 0);
+}
+[data-anime="right"]{
+    transform: translate3d(50px, 0 , 0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+[data-anime="top"]{
+    transform: translate3d(0px, 50px, 0);
+}
+
+
+
