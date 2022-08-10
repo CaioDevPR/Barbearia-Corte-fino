@@ -55,3 +55,13 @@ if(target.length) {
 window.addEventListener('scroll'), function() {
     animeScroll();
 }
+
+$('.nav a[href^="#"]').on('click', function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href'),
+    targetOffset = $(id).offset().top;
+      
+    $('galeria').animate({ 
+      scrollTop: targetOffset - 100
+    }, 500);
+  });
