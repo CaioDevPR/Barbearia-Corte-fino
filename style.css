@@ -176,7 +176,7 @@ section.module.parallax-1{
     background-position: center;
 }
 section.module.parallax-2{
-    background-image: url(/imagens/natan\ c.jpeg);
+    background-image: url(/imagens/cortefino.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -276,21 +276,28 @@ section.module.parallax-2{
 }
 
 
+.module.parallax.parallax-2 a{
+display: flex;
+justify-content: center;
+align-items: center;
+border: 1px solid;
 
+}
 .ftosoglr{
     width: 410px;
     height: 330px;
 }
 
-.galeria{
+#galeria{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 5%;
+    margin: 2%;
     grid-row-gap:3px;
+    
      
        
 }
-.galeria img{
+#galeria img{
     margin: 0 auto;
 }
 
@@ -364,21 +371,22 @@ section.module.content:nth-child(6){
 }
 
 
-.servicos{
-    position: relative;
-    top: -73.3106px;
-    background-color: #fff;
+.servicos {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-  width: 100%;
- height: 300px;
+    text-align: center;
+    
+    height: 240px;
 
 }
 .servicos img{
- margin: 0 auto;   
+    padding: 4px;
 }
 
+.servicos p{
+    color: #000;
+}
 
 
 
@@ -510,7 +518,7 @@ button:nth-child(3) > a:nth-child(1) {
             transform: translateY(0);
         }
     }
-    .galeria{
+    #galeria{
        justify-content: center;
        align-items: center;
        margin: 20%;
@@ -534,13 +542,13 @@ button:nth-child(3) > a:nth-child(1) {
 }
 
 @media (max-width: 768px){
-    .galeria {
+    #galeria {
         display: flex;
         flex-direction: column;
         align-items: center;
        
    }
-   .galeria img{
+   #galeria img{
    margin: 0;
 }
 
@@ -696,7 +704,7 @@ button:nth-child(3) > a:nth-child(1) {
         width: 370px;
         height: 270px;
     }
-    .galeria{
+    #galeria{
         display: grid;
         grid-template-columns: repeat(1 ,1fr);
     }
@@ -747,7 +755,7 @@ button:nth-child(3) > a:nth-child(1) {
     .precos h3{
         font-size: 30px;
     }
-    .galeria {
+    #galeria {
      display: grid;
      grid-template-columns: repeat(3 , 1fr);
 
@@ -852,7 +860,7 @@ button:nth-child(3) > a:nth-child(1) {
     .logo{
         width: 24%;
     }
-    .galeria {
+    #galeria {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
@@ -865,7 +873,7 @@ button:nth-child(3) > a:nth-child(1) {
 /* animacoes */
 [data-anime]{
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 [data-anime="left"]{
@@ -884,5 +892,16 @@ button:nth-child(3) > a:nth-child(1) {
     transform: translate3d(0px, 50px, 0);
 }
 
+.fa-solid.fa-house.fa-2x {
+   color: #edc065;
+   position: relative;
+   left: 24px;
+   bottom: 7px;
+   }
+   .servicos:nth-child(2) p {
+    position: relative;
+   top: 90px;
+   left: -40px; 
+   }
 
 
